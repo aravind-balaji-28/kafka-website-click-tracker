@@ -4,7 +4,6 @@ const { Kafka } = require("kafkajs");
 const app = express();
 app.use(cors());
 app.use(express.json());
-
 const kafka = new Kafka({
   clientId: "website-tracker",
   brokers: ["localhost:9092"],
