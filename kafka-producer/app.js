@@ -17,6 +17,7 @@ const connectProducer = async () => {
 };
 connectProducer();
 
+console.log('Check Log ---->')
 app.get("/count", async (req, res) => {
   const offsets = await admin.fetchTopicOffsets("click-events");
 
